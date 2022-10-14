@@ -23,5 +23,9 @@ class DatabaseSeeder extends Seeder
             'phone' => '01644954478',
             'password' => Hash::make('11111111'),
         ]);
+
+        $this->call([
+            AdminTableSeeder::class
+        ]);
     }
 }
